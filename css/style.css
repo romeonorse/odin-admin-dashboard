@@ -59,10 +59,15 @@ a {
 .main-header{
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(2rem, 1fr));
+  align-items: center;
 
   background-color: var(--secondary-color);
   padding: var(--main-padding);
   color: var(--text-color);
+}
+
+.left-input, .right-profile {
+  display: grid;
 }
 
 .main-header input {
@@ -115,24 +120,20 @@ a {
   justify-self: center;
   background-color: #fff;
   padding: var(--inner-padding);
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  display: grid;
   border-left: 3px solid var(--secondary-color);
 }
 
 .annos {
   font-size: 0.8rem;
   padding: var(--inner-padding);
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 0.5rem;
   background-color: #fff;
 }
 
 .anno {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 0.25rem;
   padding: 0.25rem;
 }
@@ -141,4 +142,5 @@ a {
   padding: var(--inner-padding);
   font-size: 0.9rem;
   background-color: #fff;
+  display: grid;
 }
